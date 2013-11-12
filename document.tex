@@ -19,6 +19,7 @@
 \usepackage{bm}                 % bold math fonts for vectors and stuff
 \usepackage{nicefrac}           % Nicer looking fractions
 \usepackage{floatflt}           % Allows text to float around figures / tables
+\usepackage{biblatex}           % Support for smarter bibliographies
 
 %\usepackage[finnish]{babel}    % use Finnish for hyphenation
 %\usepackage{hyperref}          % make clickable urls
@@ -49,6 +50,9 @@ frame=trbl,
 \newcommand\cls{\mathrel{\ooalign{$\subset$\cr        % closed set \cls
   \hidewidth\raise.225ex\hbox{$\text{{\scriptsize c}}\mkern2mu$}\cr}}}
 
+% Configure bibliography database
+\bibliography{sources.bib}
+
 \begin{document}
 
 \title{Title goes here}
@@ -57,7 +61,10 @@ frame=trbl,
 \maketitle
 
 \section*{Hello, world!}
-Here be some text for ya to read dawg. How ya like it man?
+Here be some text for ya to read dawg. How ya like it man? You program
+functionally man \cite{hughes1989functional, harbuorg}.
+
+\printbibliography
 
 \end{document}
 
