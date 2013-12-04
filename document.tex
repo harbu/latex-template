@@ -19,10 +19,18 @@
 \usepackage{bm}                 % bold math fonts for vectors and stuff
 \usepackage{nicefrac}           % Nicer looking fractions
 \usepackage{floatflt}           % Allows text to float around figures / tables
-\usepackage{biblatex}           % Support for smarter bibliographies
+\usepackage{hyperref}           % Clickable references, citations etc
+\usepackage[
+abbreviate=false,
+backend=biber,
+sortcites=true,
+sorting=nyt,
+sortlocale=en_US,
+style=numeric-verb,
+maxnames=10
+]{biblatex}                     % Bibliography support
 
 %\usepackage[finnish]{babel}    % use Finnish for hyphenation
-%\usepackage{hyperref}          % make clickable urls
 %\usepackage{color}             % colored text?
 
 % Adjust title vertical position

@@ -1,5 +1,6 @@
 *~
 document.pdf
+document.out
 *.log
 *.aux
 *.bcf
