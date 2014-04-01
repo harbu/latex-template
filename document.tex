@@ -67,6 +67,13 @@ frame=trbl,
 \newcommand{\vii}{\mathop{\Big/}}
 \newcommand{\viiva}[2]{\vii\limits_{\!\!\!\!{#1}}^{\>\,{#2}}}
 
+% Prevent page break from happening to a certain block
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
+
 % Configure bibliography database
 \bibliography{sources.bib}
 
