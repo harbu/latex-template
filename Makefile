@@ -14,5 +14,7 @@ bib:
 	pdflatex document
 	pdflatex document
 
+words: document.pdf
+	pdftotext document.pdf - | wc -w
 clean:
 	rm -f *.aux *.log *.toc *.blg *.bbl *~ *-eps-converted-to.pdf document.pdf *.bcf *.run.xml
